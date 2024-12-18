@@ -1,0 +1,39 @@
+#sideBox{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 230px;
+    background-color: white;
+    overflow-y: scroll;
+}
+.sideBarOptions{
+    margin: 40px 5px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sideBarOptions>li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.sideBarOptions>li>i{
+    font-size:24px;
+    color: gray;
+}
+.sideBarOptions>li>a{
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 4px;
+    transition: all .2s ease-in;
+    &:hover{
+        color: rgb(115, 215, 228);
+        cursor: pointer;
+    }
+}
+.activeSideBoxOption>a{
+    border-bottom: 3px solid rgb(115, 215, 228);
+}

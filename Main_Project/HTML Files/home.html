@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIC</title>
+    <link rel="stylesheet" href="../CSS Files/general.css">
+    <link rel="stylesheet" href="../CSS Files/header.css">
+    <link rel="stylesheet" href="../CSS Files/sideBox.css">
+    <link rel="stylesheet" href="../CSS Files/main.css">
+    <link rel="stylesheet" href="../CSS Files/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header id="header"></header>
+    <aside id="sideBox"></aside>
+    <main id="main">
+        <div class="userHeader">
+            <div class="appUser">
+                App Users
+            </div>
+            <div class="userSpacing"></div>
+            <div class="addUser">
+                <button class="addGuestUser fa">&#xf067; Add Guest User</button>
+                <button class="addVerifiedUser fa">&#xf067; Add Verified User</button>
+            </div>
+        </div>
+        <div class="note">
+            Note: To add a verified user, you must first add them as a guest user before proceeding to verify them.
+        </div>
+        <div class="filterData">
+            <div class="filterOption"><span>Verified User</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>GST</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Co.Pf</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>BL</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Social-Media</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Handle-by</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Pincode</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Stories</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Instore</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Sub-User</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Last Active Hour</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Post</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Exhibition</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Subscription Zone</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>City</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Reel</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Message</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Calendar</span><input type="checkbox" name="" id=""></div>
+            <div class="filterOption"><span>Dt.from/Dt.to</span><input type="checkbox" name="" id=""></div>
+        </div>
+        <div class="searchUser">          
+            <div class="form">
+                <label for="phone" class="label">Mobile Number</label>
+                <input type="text" class="formControl" name="phone" id="phone" placeholder="Search By Mobile Number" value="">
+            </div>
+            <div class="form">
+                <label for="email" class="label">Email</label>
+                <input type="text" class="formControl" name="email" id="email" placeholder="Search By Email" value="">
+            </div>
+            <div class="submit">
+                <button type="submit" class="fa">
+                    &#xf00c; Apply
+                </button>
+                <button type="reset" class="fa">
+                    &#xf021; Reset
+                </button>
+            </div>
+        </div>
+        <table class="dataTable"></table>
+        <div class="pageNo">
+            <div class="totalUserCount">
+                Total User: <span class="Usercount"></span>
+            </div>
+            <div>
+                <button>Prev</button>
+                <button class="buttonActive">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>Next</button>
+            </div>
+        </div>
+    </main>
+    <div class="popupScreen">
+        <div id="overlay"></div>
+        <div id="popup">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <div class="tabs">
+                    <div class="tabButtons">
+                        <button class="tabButton active" data-tab="tab1">User profile</button>
+                        <button class="tabButton" data-tab="tab2">Subscription</button>
+                        <button class="tabButton" data-tab="tab3">Post</button>
+                        <button class="tabButton" data-tab="tab4">Reels</button>
+                        <button class="tabButton" data-tab="tab5">Stories</button>
+                        <button class="tabButton" data-tab="tab6">Abouts</button>
+                    </div>
+                    <div class="tabContent">
+                        <div class="tabPanel active" id="tab1">
+                            <div class="userProfile">
+                                <div class="name">
+                                    <span>Name:</span>
+                                    <span><input class="nameInput" type="text" value="Admin" readonly></span>
+                                </div>
+                                <div class="email">
+                                    <span>Email:</span>
+                                    <span><input class="emailInput" type="email" value="admin@gmail.com" readonly></span>
+                                </div>
+                                <div class="password">
+                                    <span>Password:</span>
+                                    <span><input class="passwordInput" type="password" value="password" readonly></span>
+                                </div>
+                                <div class="changePasswordBox">
+                                    <button class="changePassword">Change Password</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabPanel" id="tab2">
+                        </div>
+                        <div class="tabPanel" id="tab3">
+                        <table class="postTable">
+                            <thead>
+                                <tr>
+                                    <th>Sr no.</th>
+                                    <th>Profile name</th>
+                                    <th>Post Image</th>
+                                    <th>Caption</th>
+                                    <th>Is Admin Posted</th>
+                                    <th>Modified at</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Kameshwari Jewelery</td>
+                                    <td><img src="" alt="img" width="100px" height="100px" style="border: 1px solid black;"></td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fuga soluta repudiandae expedita omnis quaerat nostrum numquam iste atque, reiciendis quia eveniet, labore molestiae ratione.</td>
+                                    <td>No</td>
+                                    <td>12 Dec 2024 11:26 AM</td>
+                                    <td><i class="fa editOption">&#xf040;</i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        <div class="tabPanel" id="tab4">
+                        </div>
+                        <div class="tabPanel" id="tab5">
+                        </div>
+                        <div class="tabPanel" id="tab6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button style="color: white;" id="closePopup"><b>X</b></button>
+        </div>
+    </div>
+    <script type="module" src="../JS Files/main.js"></script>
+</body>
+</html>

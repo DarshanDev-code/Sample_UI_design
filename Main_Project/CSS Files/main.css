@@ -1,0 +1,185 @@
+/* Main-Content CSS */
+#main{
+    position: relative;
+    width: 80%;
+    top: 100px;
+    right: 50px;
+    left: 250px;
+    margin-bottom: 20px;
+    padding: 20px;
+    line-height: 1.5;
+    color: #696e74;
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+.userHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0 20px 0;
+    border-bottom: 1px solid rgb(128, 128, 128,.7);
+}
+.appUser{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+.userSpacing{
+    flex: 1;
+}
+.addUser{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+}
+.addVerifiedUser, .addGuestUser{ 
+    padding: 10px 8px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+.addGuestUser{
+    background-color: #fca625;
+}
+.addVerifiedUser{
+    background-color: rgb(101, 154, 246);
+}
+.filterData{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2px;
+    margin: 20px 0;
+    color: white;
+}
+.filterData >div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(133, 140, 150);
+    padding: 0 4px;
+}
+.filterData > div > input[type='checkbox']{
+    scale: 1.2;
+}
+.note{
+    color: rgb(255, 55, 0);
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(128, 128, 128,.7);
+}
+
+.searchUser{
+    border-bottom: 1px solid rgb(128, 128, 128,.7);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form .label{
+    font-size: 16px;
+}
+.form .formControl{
+    width: 200px;
+    height: 30px;
+}
+.form .formControl::placeholder{
+    padding: 5px;
+    font-size: 14px;
+    color: rgb(169, 163, 163);
+}
+.submit{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    align-items: end;
+}
+.submit button{
+    padding: 5px 15px;
+    height: 28px;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+.submit :nth-child(1){
+    background-color: rgb(44, 129, 226);
+}
+.submit :nth-child(2){
+    background-color: #3B3E47;
+}
+
+/* AppUsers Table CSS */
+.dataTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 14px;
+}
+th,td {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+th{
+    background-color: white;
+}
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, .05);
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:hover {
+    background-color: #d1cece;
+}
+.popupButton{
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.verification{
+    border-radius: 8px;
+    font-weight: 700;
+    border: none;
+    color: white;
+    cursor:default;
+}
+.verification.completed{
+    background-color: rgb(59, 224, 48);
+}
+.verification.notCompleted{
+    background-color: rgb(255, 37, 37);
+}
+.pageNo{
+    display: flex;
+    justify-content: space-between;
+}
+.totalUserCount{
+    color: rgb(78, 77, 77);
+}
+.pageNo button{
+    border: .5px solid rgba(0, 0, 0, .05);
+    padding: 8px 12px;
+}
+.buttonActive{
+    background-color: rgb(47, 134, 215);
+    color: white;
+}
+
+.popupButton{
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}

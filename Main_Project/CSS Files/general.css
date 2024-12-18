@@ -1,0 +1,12 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .8px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+button{
+    cursor: pointer;
+}
